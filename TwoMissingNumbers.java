@@ -6,6 +6,17 @@ EXPLANATION OF THE LINK BELOW.
 
 http://www.byte-by-byte.com/twomissingnumbers/2/*/
 
+/* The Problem: Given an array of integers from 1 to n, but with two numbers
+missing, determine which two numbers are missing.
+
+Examples:
+    Input --> [1, 2, 3, 4, 6, 7, 9]
+    Output --> 5, 8
+
+    Input --> [1, 3, 4, 5, 7]
+    Output --> 2, 6
+*/
+
 // Time Complexity --> O(n)
 // Space Complexity --> O(1)
 import java.util.Arrays;
