@@ -77,10 +77,6 @@ public class TwoMissingNumbers {
         /* totalLeftXor ^ arrLeftXor will reveal the missing number that is less
         than the pivot and totalRightXor ^ arrRightXor will reveal the missing
         number that is bigger than the pivot */
-        int[] answer = new int[]{ totalLeftXor ^ arrLeftXor,
-                                  totalRightXor ^ arrRightXor
-        };
-
         int numOne = totalLeftXor ^ arrLeftXor;
         int numTwo = totalRightXor ^ arrRightXor;
         System.out.println("The missing numbers are: " + numOne + " and " + numTwo );
