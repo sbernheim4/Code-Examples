@@ -32,7 +32,7 @@ public class TwoMissingNumbers {
 
         // Get the sum of the elements in the array
         long arrSum = 0;
-        for (int i : arr) {
+        for (int i : array) {
             arrSum += i;
         }
         System.out.println("arrSum: " + arrSum);
@@ -78,7 +78,11 @@ public class TwoMissingNumbers {
         than the pivot and totalRightXor ^ arrRightXor will reveal the missing
         number that is bigger than the pivot */
         int[] answer = new int[]{ totalLeftXor ^ arrLeftXor,
-            totalRightXor ^ arrRightXor};
-        System.out.println("The missing numbers are: " + totalLeftXor ^ arrLeftXor + " and " + totalRightXor ^ arrRightXor);
+                                  totalRightXor ^ arrRightXor
+        };
+
+        int numOne = totalLeftXor ^ arrLeftXor;
+        int numTwo = totalRightXor ^ arrRightXor;
+        System.out.println("The missing numbers are: " + numOne + " and " + numTwo );
     }
 }
