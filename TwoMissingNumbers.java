@@ -1,7 +1,8 @@
 /* PLEASE NOTE: THIS IS NOT MY SOLUTION. I DID NOT DERIVE THE SOLUTION METHOD
 NOR WRITE THE CODE. THE SOLUTION CAME FROM THE LINK BELOW. I HAVE THIS CODE AS
 AN EXAMPLE OF HOW THE XOR OPERATOR WORKS AND ITS SYNTAX IN JAVA. UNTIL NOW I HAD
-NOT EVER USED THE XOR OPERATOR AND JUST UNDERSTOOD HOW IT WORKS.
+NOT EVER USED THE XOR OPERATOR OR KNOWN WHAT IT DOES. ALL CREDIT GOES TO THE
+EXPLANATION OF THE LINK BELOW.
 
 http://www.byte-by-byte.com/twomissingnumbers/2/*/
 
@@ -18,11 +19,11 @@ public class TwoMissingNumbers {
         twoMissing(missingArray);
     }
 
-    public static void twoMissing(int[] arr) {
-        System.out.println("Input Array: " + Arrays.toString(arr));
+    public static void twoMissing(int[] array) {
+        System.out.println("Input Array: " + Arrays.toString(array));
 
-        // What is n for the array
-        int size = arr.length + 2;
+        // What is n for the array --> Add two b/c two numbers are missing
+        int size = array.length + 2;
         System.out.println("Size: " + size);
 
         // Sum from 1 to n
@@ -36,8 +37,7 @@ public class TwoMissingNumbers {
         }
         System.out.println("arrSum: " + arrSum);
 
-        /*
-        Determine the halfway point --> Of the two missing numbers, one is
+        /* Determine the halfway point --> Of the two missing numbers, one is
         greater than n/2 and one is less than n/2. The Pivot will ensure that
         the two values are separated for the xor xomparison below */
         int pivot = (int) ((totalSum - arrSum) / 2);
@@ -65,9 +65,8 @@ public class TwoMissingNumbers {
 
         The difference here is that arrLeftXor will not contain one of the
         missing numbers and arrRightXor will not contain the xor with the other
-        number
-        */
-        for (int i : arr) {
+        number */
+        for (int i : array) {
             if (i <= pivot) {
                 arrLeftXor ^= i;
             } else arrRightXor ^= i;
