@@ -6,7 +6,8 @@ EXPLANATION OF THE LINK BELOW.
 
 http://www.byte-by-byte.com/twomissingnumbers/2/*/
 
-
+// Time Complexity --> O(n)
+// Space Complexity --> O(1)
 import java.util.Arrays;
 
 public class TwoMissingNumbers {
