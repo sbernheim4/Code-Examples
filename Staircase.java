@@ -7,9 +7,9 @@ import java.util.regex.*;
 public class Staircase {
 
     public static void main(String[] args) {
+        System.out.println("Enter a number"); 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        System.out.println("Enter a number"); 
 		Staircase(n);
     }
 
