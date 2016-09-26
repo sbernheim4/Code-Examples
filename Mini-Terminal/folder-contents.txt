@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+out
+PA01.pdf
+PA1.iml
+PA1part1.pptx
+src
